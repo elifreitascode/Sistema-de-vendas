@@ -44,13 +44,14 @@ body *{
     border-radius: 10px;
     padding: 10px;
     background: #b3d8d897;
-    color: #fff;
-    font-size: 12pt;
+    color: #b5b3b3;
+    font-size: 11pt;
     box-shadow: 0px 10px 40px #122525c1;
     outline: none;
     box-sizing: border-box;
 }
 .campo-texto > label{
+    margin: 3px 0px;
     color: #fff;
     margin-bottom: 5px 6px;
 }
@@ -60,19 +61,25 @@ body *{
 a {
     justify-content: center;
 }
-.button-login{
+form {
+    display: flex;
+    justify-content: center;
+    margin: 23px;
+    height: 46px;
     width: 100%;
-    padding: 16px 50px;
-    margin: 25px;
-    border: none;
+    background-color: #FFDEAD;
     border-radius: 15px;
+    box-shadow:  0px 10px 40px#493e2ca0;
+}
+form [type="submit"]{
+    border: none;
+    background-color: #FFDEAD;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 3px;
-    color: #356666;
-    background: #FFDEAD;
     cursor: pointer;
-    box-shadow:  0px 10px 40px  #554938ad;
+    color: #356666;
+    cursor: pointer;
 }
 .right-card{
     width: 50vw;

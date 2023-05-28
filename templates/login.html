@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de vendas</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <script src="https://kit.fontawesome.com/f6bad2eb5e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="main-login">
@@ -24,7 +24,9 @@
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" placeholder="Senha">
                 </div>
-                <button class="button-login">Login</button>
+                <form action="http://127.0.0.1:5000/paginainicial">
+                    <input type="submit" value="Login">
+                </form>
             </div>
         </div>
     </div>
