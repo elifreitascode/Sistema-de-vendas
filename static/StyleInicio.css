@@ -59,3 +59,20 @@ ul li.item-menu > a .txt-link{
 ul li.item-menu > a .icon > i{
     font-size: 25px;
 }
+.resumo-principal{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 200px;
+    
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    background-color: #1a3939;
+    padding: 60px 120px;
+    border: none;
+}
