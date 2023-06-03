@@ -5,9 +5,17 @@
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
 }
-
+.tela{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+body{
+    background-color: #e8e8e8e7;
+}
 nav.menu-lateral{
-    width: 80px;
+    width: 6%;
     height: 100%;
     background-color: #1a3939;
     padding: 40px 0px 40px 1%;
@@ -57,29 +65,84 @@ ul li.item-menu > a .txt-link{
 ul li.item-menu > a .icon > i{
     font-size: 25px;
 }
-.resumo-principal{
+.pagina-inicial{
+    display: flex;
+    width: 90vw;
+    height: 95vh;
+    margin: 30px 40px 40px 11%;
+    flex-direction: column;
+}
+.pagina-inicial > h1{
+    margin-bottom: 10px;
+}
+.container{
     display: flex;
     flex-direction: row;
-    background-color: #fff;
-    padding: 15px 15px 15px 0px;
-    gap: 15.7%;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .card{
     display: flex;
-    background-color: #234646eb;
+    width: 200px;
+    height: 80px;
+    background-color: #f4efef;
+    border: none;
     border-radius: 10px;
-    margin: 15px 15px 15px 0px;
-    width: 100%;
-    height: 15vh;
-}
-.pagina-inicial{
-    display: flex;
+    padding: 14px;
     flex-direction: column;
-    height: 97vh;
-    width: 80vw;
-    margin-left: 20%;
+    
+}
+#primeiro{
+    margin-right: 175px;
+}
+#segundo{
+    margin-left: 175px;
+    margin-right: 175px;
+}
+#terceiro{
+    margin-left: 115px;
+}
+.card-aniversariante{
+    width: 1240px;
+    height: 170px;
+    background-color: #f4efef;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 13px;
+}
+.card-estoque{
+    width: 1240px;
+    height: 300px;
+    background-color: #f4efef;
+    margin-top: 13px;
+    border: none;
+    border-radius: 10px;
 }
 
     
+.campo-texto{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
 
-
+}
+.vendas{
+    width: 100%;
+    height: 100%;
+}
+.vendas > h2{
+    font-size: 12px;
+    width: 95%;
+    height: 37%;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+#segundoh2vendas{
+    font-size: 18px;
+    width: 95%;
+    margin: 0;
+    height: 50%;
+}
+    
