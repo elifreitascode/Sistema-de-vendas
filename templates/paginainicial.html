@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fontawesome.com/v4/icons/">
     <title>Inicio</title>
     <link rel="stylesheet" href="/static/StyleInicio.css">
 </head>
@@ -53,17 +54,33 @@
                     <section class="card" id="primeiro">
                         <div class="campo-texto">
                             <div class="vendas">
-                                <h2>Vendas hoje</h2>
+                                <h2 id="primeiroh2vendas">Vendas hoje</h2>
                                 <h2 id="segundoh2vendas">R$ 0,00</h2>
                             </div>
                         </div>
-                        
+                        <span class="icon-card" id="icondollar">
+                            <i class="bi bi-currency-dollar"></i>
+                        </span>
                     </section>
                     <section class="card" id="segundo">
-                                
+                        <div class="campo-texto" id="campo1">
+                            <div class="vendas" id="segundovenda">
+                                <h2 id="primeiroh2vendas">Vendas (mensal)</h2>
+                                <h2 id="segundoh2vendas">R$ 0,00</h2>
+                            </div>
+                        </div>
+                        <span class="icon-card">
+                            <i class="bi bi-calendar-fill"></i>
+                        </span>    
                     </section>
                     <section class="card" id="terceiro">
-                                
+                            <form action="#">
+                                <input type="submit" value="Efetuar" id="buttonum">
+                                <input type="submit" value="nova venda" id="buttondois">
+                            </form>
+                            <span class="icon-card" id="iconplus">
+                                <i class="bi bi-plus"></i>
+                            </span> 
                     </section>
                 </div>
             <div class="card-aniversariante">

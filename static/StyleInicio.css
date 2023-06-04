@@ -74,6 +74,7 @@ ul li.item-menu > a .icon > i{
 }
 .pagina-inicial > h1{
     margin-bottom: 10px;
+    color: #565555fd;
 }
 .container{
     display: flex;
@@ -83,25 +84,31 @@ ul li.item-menu > a .icon > i{
 }
 .card{
     display: flex;
-    width: 200px;
+    width: 230px;
     height: 80px;
     background-color: #f4efef;
-    border: none;
-    border-radius: 10px;
-    padding: 14px;
-    flex-direction: column;
+    border-radius: 9px;
+    padding: 15px 17px 12px 23px;
+    box-shadow: 8px 8px 26px  #bebdbdab;
+    border-left: 4px solid #c9a672;
     
 }
 #primeiro{
-    margin-right: 175px;
+    margin-right: 140px;
+    padding: 15px 20px 12px 23px;
 }
 #segundo{
-    margin-left: 175px;
-    margin-right: 175px;
+    margin-left: 155px;
+    margin-right: 170px;
 }
 #terceiro{
-    margin-left: 115px;
+    margin-left: 85px;
+    cursor: pointer;
 }
+#segundovenda{
+    width: 74%;
+}
+
 .card-aniversariante{
     width: 1240px;
     height: 170px;
@@ -120,17 +127,20 @@ ul li.item-menu > a .icon > i{
     border-radius: 10px;
 }
 
-    
 .campo-texto{
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 76%;
     flex-direction: column;
+    white-space: nowrap;
 
 }
 .vendas{
-    width: 100%;
+    display: flex;
+    width: 75%;
     height: 100%;
+    flex-direction: column;
+    
 }
 .vendas > h2{
     font-size: 12px;
@@ -139,10 +149,56 @@ ul li.item-menu > a .icon > i{
     margin-bottom: 5px;
     text-transform: uppercase;
 }
+#primeiroh2vendas{
+    color: #c9a672;
+}
 #segundoh2vendas{
-    font-size: 18px;
+    font-size: 21px;
     width: 95%;
     margin: 0;
-    height: 50%;
+    height: 45%;
+    color: #494848fd;
 }
+form{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+}
+input[type="submit"]{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 900;
+    justify-content: flex-start;
+    font-size: 12px;
+    border: none;
+}
+#buttondois{
+    margin-top: 4px;
+    height: 60%;
+    font-size: 15px;
+    color: #494848fd;
+    cursor: pointer;
+}
+#buttonum{
+    color: #c9a672;
+    cursor: pointer;
+}
+span.icon-card{
+    display: flex;
+    align-items: center;
     
+}
+span.icon-card > i{
+    font-size: 28px;
+    color: #a7a5a5cb;
+}
+#icondollar > i{
+    font-size: 35px;
+    margin-right: 7px;
+    margin-bottom: 2px;
+}
+#iconplus > i{
+    font-size: 43px;
+    margin-bottom: 2px;
+}
