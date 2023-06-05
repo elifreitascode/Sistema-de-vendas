@@ -89,7 +89,7 @@ ul li.item-menu > a .icon > i{
     background-color: #f4efef;
     border-radius: 9px;
     padding: 15px 17px 12px 23px;
-    box-shadow: 8px 8px 26px  #bebdbdab;
+    box-shadow: 9px 9px 26px  #bebdbdab;
     border-left: 4px solid #c9a672;
     
 }
@@ -114,17 +114,21 @@ ul li.item-menu > a .icon > i{
     height: 170px;
     background-color: #f4efef;
     margin-top: 10px;
-    border: none;
+    border-left: 4px solid #fa9200;
     border-radius: 10px;
     margin-bottom: 13px;
+    padding: 20px 20px 24px 20px;
+    box-shadow: 9px 9px 26px  #bebdbdab;
 }
 .card-estoque{
     width: 1240px;
     height: 300px;
     background-color: #f4efef;
     margin-top: 13px;
-    border: none;
+    border-left: 4px solid #008F4D;
     border-radius: 10px;
+    padding: 20px 20px 24px 20px;
+    box-shadow: 9px 9px 26px  #bebdbdab;
 }
 
 .campo-texto{
@@ -201,4 +205,83 @@ span.icon-card > i{
 #iconplus > i{
     font-size: 43px;
     margin-bottom: 2px;
+}
+.conteudo-aniversariante{
+    width: 100%;
+    height: 100%;
+}
+.aniver-mes{
+    display: flex;
+    flex-direction: column;
+    height: 78%;
+    justify-content: center;
+    border-radius: 7px;
+    background-color: #ebeaeaa2;
+}
+.aniver-mes > h2{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 8px;
+    color: #d87e00;
+}
+.mensagem-niver{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 22%;
+}
+.mensagem-niver > h2{
+    font-size: 15px;
+    color: #818181f3;
+}
+.conteudo-estoque{
+    width: 100%;
+    height: 100%;
+}
+.mensagem-estoque{
+    display: flex;
+    flex-direction: column;
+    height: 34%;
+    justify-content: center;
+    border-radius: 7px;
+    background-color: #ebeaeaa2;
+}
+.mensagem-estoque > h2{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 8px;
+    color:#008245
+}
+.conteudo-produto{
+    margin-top: 4px;
+    display: flex;
+    height: 62%;
+    flex-direction: column;
+    padding: 7px;
+}
+.titulos-estoque{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15%;
+    border-top: 1.5px solid #8d8d8df3;
+    border-bottom: 1.5px solid #8d8d8df3;
+}
+.titulos-estoque > h2{
+    margin-top: 1.5px;
+    font-size: 14px;
+    color: #717171;
+}
+.informaçoes-estoque{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f4f192a9;
+}
+.informaçoes-estoque > h2{
+    margin-top: 4px;
+    font-size: 14px;
+    width: 8%;
+    color: #717171;
 }
