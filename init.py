@@ -12,6 +12,12 @@ def login():
 @app.route('/paginainicial')
 def paginaInicial():
     return render_template('paginainicial.html')
+@app.route('/home')
+def home():
+    return render_template('home.html')
+@app.route('/vendas')
+def vendas():
+    return render_template('vendas.html')
 #colocar a página no ar
 if __name__=='__main_':
     app.run(debug=True)
