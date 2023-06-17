@@ -5,6 +5,11 @@
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
 }
+#conteudo{
+    height: 100vh;
+    width: 91vw;
+    margin-left: 9.7vw;
+}
 .tela{
     position: fixed;
     height: 100vh;
@@ -15,7 +20,7 @@ body{
     background-color: #e8e8e8e7;
 }
 nav.menu-lateral{
-    width: 6%;
+    width: 5.5%;
     height: 100%;
     background-color: #1a3939;
     padding: 40px 0px 40px 1%;
@@ -69,7 +74,7 @@ ul li.item-menu > a .icon > i{
     display: flex;
     width: 90vw;
     height: 95vh;
-    margin: 30px 40px 40px 11%;
+    margin: 30px 40px 40px 1%;
     flex-direction: column;
 }
 .pagina-inicial > h1{

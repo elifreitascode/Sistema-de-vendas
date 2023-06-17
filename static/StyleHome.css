@@ -5,11 +5,16 @@
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
 }
+#conteudo{
+    height: 100vh;
+    width: 91vw;
+    margin-left: 9.7vw;
+}
 .pagina-inicial{
     display: flex;
     width: 90vw;
     height: 95vh;
-    margin: 30px 40px 40px 11%;
+    margin: 30px 40px 40px 1%;
     flex-direction: column;
 }
 .pagina-inicial > h1{
