@@ -18,6 +18,9 @@ def home():
 @app.route('/vendas')
 def vendas():
     return render_template('vendas.html')
+@app.route('/produtos')
+def produtos():
+    return render_template('produtos.html')
 #colocar a página no ar
 if __name__=='__main_':
     app.run(debug=True)

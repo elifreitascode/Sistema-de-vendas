@@ -26,3 +26,17 @@ $(document).ready(function(){
         })
     });
 });
+$(document).ready(function(){
+    $("#idProd").click(function(event) {
+        event.preventDefault();
+        $.ajax({
+            url: "/produtos",
+            success: function(data){
+                $("#conteudo").html(data)
+            },
+            error: function(){
+
+            }
+        })
+    });
+});
