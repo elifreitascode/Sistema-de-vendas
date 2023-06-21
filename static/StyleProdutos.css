@@ -37,17 +37,60 @@
 }
 .nomeTodosProdutos{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
     width: 100%;
     height: 11vh;
     padding: 18px;
     border-bottom: 1.5px solid #cdd2df8e;
     background-color: #e4e5e67d
 }
-.nomeTodosProdutos > h2{
+.tituloTodosProd{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.tituloTodosProd > h2{
     font-size: 18px;
     color: #5e5ec4ce;
+}
+.divbuttonTodosProd{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 85%;
+    justify-content: right;
+    
+}
+.iconButton{
+    display: flex;
+    height: 100%;
+    width: 47px;
+    background-color: #c39f69c0;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+.iconButton > i{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.buttonTodosProd{
+    width: 150px;
+    height: 100%;
+    background-color: #d1ac73c7;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.spanButton{
+    color: #fff;
+    font-size: 15px;
 }
 .infoProdutos{
     display: flex;
@@ -268,11 +311,44 @@ span.iconseta > i{
 .dadosProdutos{
     display: flex;
     flex-direction: column;
-    height: 22vh;
-    width: 100%;
+    height: 17vh;
+    width: 50%;
     justify-content: space-evenly;
 }
 .dadosProdutos > h2{
     font-size: 16.5px;
     color: #898989;
+}
+.labeleInput{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 50%;
+    align-items: flex-end;
+    justify-content: right;
+}
+.inputBus{
+    margin-bottom: 15px;
+    height: 25px;
+    border-color: #d8d8d86a;
+    border-radius: 4px;
+}
+.labelBus{
+    height: 25px;
+    width: 55px;
+    margin-right: 6px;
+    margin-bottom: 13.4px;
+    font-size: 17px;
+}
+.cor{
+    color: #282828f0;
+}
+.underlineh2{
+    text-decoration: underline;
+}
+.dadoseInput{
+    display: flex;
+    width: 100%;
+    height: 22vh;
+    flex-direction: row;
 }
