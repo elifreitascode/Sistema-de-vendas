@@ -21,6 +21,9 @@ def vendas():
 @app.route('/produtos')
 def produtos():
     return render_template('produtos.html')
+@app.route('/clientes')
+def clientes():
+    return render_template('clientes.html')
 #colocar a página no ar
 if __name__=='__main_':
     app.run(debug=True)

@@ -40,3 +40,17 @@ $(document).ready(function(){
         })
     });
 });
+$(document).ready(function(){
+    $("#idClie").click(function(event) {
+        event.preventDefault();
+        $.ajax({
+            url: "/clientes",
+            success: function(data){
+                $("#conteudo").html(data)
+            },
+            error: function(){
+
+            }
+        })
+    });
+});

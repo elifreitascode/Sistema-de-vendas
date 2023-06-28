@@ -11,13 +11,13 @@
 #conteudo{
     height: 100vh;
     width: 91vw;
-    margin-left: 9.7vw;
+    margin-left: 10vw;
 }
 .paginaIn-produtos{
     display: flex;
     width: 90vw;
     height: 95vh;
-    margin: 30px 40px 40px 1%;
+    margin: 30px 40px 40px 2%;
     flex-direction: column;
 }
 .paginaIn-produtos > h1{
@@ -61,11 +61,10 @@
     width: 50%;
     height: 85%;
     justify-content: right;
-    
 }
 .iconButton{
     display: flex;
-    height: 100%;
+    height: 90%;
     width: 47px;
     background-color: #c39f69c0;
     justify-content: center;
@@ -75,13 +74,13 @@
     cursor: pointer;
 }
 .iconButton > i{
-    font-size: 30px;
+    font-size: 28px;
     color: #fff;
     cursor: pointer;
 }
 .buttonTodosProd{
     width: 150px;
-    height: 100%;
+    height: 90%;
     background-color: #d1ac73c7;
     border: none;
     border-top-right-radius: 5px;
@@ -352,3 +351,4 @@ span.iconseta > i{
     height: 22vh;
     flex-direction: row;
 }
+.divbuttonTodosProd
