@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de vendas</title>
-    <link rel="stylesheet" href="/static/StyleLogin.css">
+    <link rel="stylesheet" href="{%static 'login/css/StyleLogin.css'%}">
 </head>
 <body>
     <div class="main-login">
         <div class="left-frase">
             <h1>O melhor sistema pra controlar <br> suas vendas e seu estoque</h1>
-            <img src="{{ url_for('static', filename='stock.svg')}}" alt="stock animation" class="left-imagem-login">
+            <img src=" {% static 'login/img/stock.svg' %}" alt="stock animation" class="left-imagem-login">
         </div>
         <div class="right-card">
             <div class="card-login">
