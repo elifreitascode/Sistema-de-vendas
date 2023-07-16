@@ -1,0 +1,43 @@
+
+<body>
+    <div class="tela">
+        <nav class="menu-lateral">
+            <div class="button-expandir">
+                <i class="bi bi-list"></i>
+            </div>
+            <ul>
+                <li class="item-menu" id="idPrincipalHome">
+                    <a href="#" id="idHome">
+                        <span class="icon"><i class="bi bi-house"></i></span>
+                        <span class="txt-link">Home</span>
+                    </a>
+                </li>
+                <li class="item-menu" id="idPrincipalVen">
+                    <a href="#" id="idVen">
+                        <span class="icon"><i class="bi bi-cash-stack"></i></span>
+                        <span class="txt-link">Vendas</span>
+                    </a>
+                </li>
+                <li class="item-menu" id="idPrincipalCli">
+                    <a href="#" id="idClie">
+                        <span class="icon"><i class="bi bi-people"></i></span>
+                        <span class="txt-link">Clientes</span>
+                    </a>
+                </li>
+                <li class="item-menu" id="idPrincipalPro">
+                    <a href="#" id="idProd">
+                        <span class="icon"><i class="bi bi-boxes"></i></span>
+                        <span class="txt-link">Produtos</span>
+                    </a>
+                </li>
+                <li class="item-menu" id="idPrincipalCon">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-person-circle"></i></span>
+                        <span class="txt-link">Conta</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        {% block content %}{% endblock content %}
+    </div>
+</body>    
