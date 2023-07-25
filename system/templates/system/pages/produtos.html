@@ -16,6 +16,7 @@
                     <button class="buttonTodosProd"><span class="spanButton">Adicionar produto</span></button>
                 </div>
             </div>
+            {% if tem_produtos %}
             <div class="infoProdutos">
                 <div class="dadoseInput">
                     <div class="dadosProdutos">
@@ -72,52 +73,32 @@
                         </span>
                     </div>
                 </div>
+                {% for produto in produtos  %}
                 <div class="espaçoProd">
                     <div class="varProd1">
-                        <h2>234</h2>
+                        <h2>{{produto.Cod}}</h2>
                     </div>
                     <div class="varProd2">
-                        <h2>Camiseta0978</h2>
+                        <h2>{{produto.SKU}}</h2>
                     </div>
                     <div class="varProd3">
-                        <h2>Camisa <br> Dry Fit Nike</h2>
+                        <h2>{{produto.Nome}}</h2>
                     </div>
                     <div class="varProd4">
-                        <h2>76</h2>
+                        <h2>{{produto.Vendas}}</h2>
                     </div>
                     <div class="varProd5">
-                        <h2>72</h2>
+                        <h2>{{produto.EstoqueTotal}}</h2>
                     </div>
                     <div class="varProd6">
-                        <h2>R$ 10.200,46</h2>
+                        <h2>{{produto.CustoTotal}}</h2>
                     </div>
                     <div class="varProd7">
-                        <h2>R$ 22.200,46</h2>
+                        <h2>{{produto.RevendaTotal}}</h2>
                     </div>
                 </div>
-                <div class="espaçoProd">
-                    <div class="varProd1">
-                        <h2>160</h2>
-                    </div>
-                    <div class="varProd2">
-                        <h2>Cuecasomellos8382</h2>
-                    </div>
-                    <div class="varProd3">
-                        <h2>Cueca<br>Elastano Somellos</h2>
-                    </div>
-                    <div class="varProd4">
-                        <h2>140</h2>
-                    </div>
-                    <div class="varProd5">
-                        <h2>110</h2>
-                    </div>
-                    <div class="varProd6">
-                        <h2>R$ 5.200,46</h2>
-                    </div>
-                    <div class="varProd7">
-                        <h2>R$ 10.200,46</h2>
-                    </div>
-                </div>
-        </div>
+                {% endfor %}
+            </div>
+            {% endif %}
     </main>
 {% endblock content %}
