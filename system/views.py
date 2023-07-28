@@ -14,9 +14,8 @@ def vendas(request, id):
             'venda': venda,
         })
     else:
-        return render(request, 'system/pages/vendas.html', context={
-            'nao_tem': True,
-        })
+        return render(request, 'system/pages/vendas.html',
+        )
 
 
 def produtos(request,id):

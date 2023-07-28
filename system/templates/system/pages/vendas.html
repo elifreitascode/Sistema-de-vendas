@@ -4,6 +4,7 @@
 {% block content %}
     <main class="paginaIn-vendas">
         <h1>Controle de Vendas</h1>
+        {% if tem_vendas  %}
         <div class="todas-vendas">
             <div class="nomeTodasVendas">
                 <h2>Todas as vendas</h2>
@@ -26,58 +27,44 @@
                         <h2 class="title5">Preços</h2>
                     </div>
                 </div>
+                {% for i in venda  %}
                 <div class="espaçoInfo">
                     <div class="varInfo1">
-                        <h2>000</h2>
+                        <h2>{{i.Cod}}</h2>
                     </div>
                     <div class="varInfo2">
-                        <h2>Paga</h2>
+                        <h2>{{i.Situacao}}</h2>
                     </div>
                     <div class="varInfo3">
-                        <h2>02/02/2023 <br> 20:13</h2>
+                        <h2>{{i.Data}}</h2>
                     </div>
                     <div class="varInfo4">
-                        <h2>Cliente: Elizeu<br>Freitas</h2>
+                        <h2>Cliente: {{i.Nome_cliente}}<br>{{i.Sobrenome_cliente}}</h2>
                     </div>
                     <div class="varInfo5">
-                        <h2>R$ 1.200,46</h2>
+                        <h2>R$ {{i.Preco_da_venda}}</h2>
                     </div>
                 </div>
-                <div class="espaçoInfo">
-                    <div class="varInfo1">
-                        <h2>000</h2>
-                    </div>
-                    <div class="varInfo2">
-                        <h2>Aguardando Pagamento</h2>
-                    </div>
-                    <div class="varInfo3">
-                        <h2>10/05/2023 <br> 17:22</h2>
-                    </div>
-                    <div class="varInfo4">
-                        <h2>Cliente: Anderson<br>Fiuza</h2>
-                    </div>
-                    <div class="varInfo5">
-                        <h2>R$ 3.900,12</h2>
-                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% else %}
+        <div class="not-todas-vendas">
+            <div class="infoVen">
+                <span class="iconVen">
+                    <i class="bi bi-emoji-laughing"></i></i>
+                </span>
+                <div class="mensagemVen">
+                    <h2>Ainda não possui nenhuma venda no sistema !</h2>
                 </div>
-                <div class="espaçoInfo" id="ultimoInfo">
-                    <div class="varInfo1">
-                        <h2>000</h2>
-                    </div>
-                    <div class="varInfo2">
-                        <h2>Aguardando Pagamento</h2>
-                    </div>
-                    <div class="varInfo3">
-                        <h2>17/11/2022<br></h2>
-                    </div>
-                    <div class="varInfo4">
-                        <h2>Cliente: Fernando <br> Miguel</h2>
-                    </div>
-                    <div class="varInfo5">
-                        <h2>R$ 500,50</h2>
-                    </div>
+                <div class="divbuttonTodosVen">
+                    <span class="iconButtonVen">
+                        <i class="bi bi-plus"></i>
+                    </span>
+                    <button class="buttonTodosVen"><span class="spanButtonVen">Fazer nova venda</span></button>
                 </div>
             </div>
         </div>
+        {% endif %}
     </main>
 {% endblock content %}
