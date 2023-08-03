@@ -14,7 +14,9 @@ def vendas(request, id):
             'venda': venda,
         })
     else:
-        return render(request, 'system/pages/vendas.html',
+        return render(request, 'system/pages/vendas.html', context={
+            
+        }
         )
 
 
