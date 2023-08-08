@@ -1,0 +1,18 @@
+
+{% load static %}
+<html lang="pt-br">
+<head>
+    {% include 'login/partials/links.html' %}
+    <title>Sistema de vendas {% block titleLogin %}{% endblock titleLogin %}</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-frase">
+            <h1>O melhor sistema pra controlar <br> suas vendas e seu estoque</h1>
+            <img src=" {% static 'login/img/stock.svg' %}" alt="stock animation" class="left-imagem-login">
+        </div>
+        <div class="right-card">
+            {% block cards %}{% endblock cards %}
+        </div>
+    </div>
+</body>

@@ -1,0 +1,19 @@
+
+{% extends 'global/baseLogin.html' %}
+{% block titleLogin %}| Login{% endblock titleLogin %}
+{% block cards %}
+<div class="card-login">
+    <h1>LOGIN</h1>
+    <div class="campo-texto">
+        <label for="usuario">Usuário</label>
+        <input type="text" name="usuario" placeholder="Usuário">
+    </div>
+    <div class="campo-texto">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" placeholder="Senha">
+    </div>
+    <form action="http://127.0.0.1:5000/paginainicial">
+        <input type="submit" value="Login">
+    </form>
+</div>
+{% endblock cards %}
