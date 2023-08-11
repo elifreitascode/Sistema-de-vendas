@@ -1,34 +1,26 @@
 {% extends 'global/baseLogin.html' %}
 {% block titleLogin %}| Sign up{% endblock titleLogin %}
 {% block cards %}
-<div class="card-login">
+<div class="card-login" id="idcard">
     <h1>SIGN UP</h1>
-    <div class="campo-texto">
-        <label for="usuario">Email</label>
-        <input type="text" name="usuario" placeholder="Usuário">
+    <div class="campo-texto1" id="campoemail">
+        <label for="email">Email</label>
+        <input type="text" name="email" placeholder="Email">
     </div>
-    <div class="input-nomes">
-        <div class="campo-texto">
-            <label for="senha">Nome</label>
-            <input type="password" name="senha" placeholder="Senha">
-        </div>
-        <div class="campo-texto">
-            <label for="senha">Sobrenome</label>
-            <input type="password" name="senha" placeholder="Senha">
-        </div>
+    <div class="campo-texto1" id="camponome">
+        <label for="nome">Nome</label>
+        <input type="" name="senha" placeholder="Senha">
     </div>
-    <div class="input-senhas">
-        <div class="campo-texto">
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" placeholder="Senha">
-        </div>
-        <div class="campo-texto">
-            <label for="senha">Confirmação de senha</label>
-            <input type="password" name="senha" placeholder="Senha">
-        </div>
+    <div class="campo-texto1" id="camposenha">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" placeholder="Senha">
+    </div>
+    <div class="campo-texto1" id="campoconfirmacao">
+        <label for="senha">Confirmação de senha</label>
+        <input type="password" name="senha" placeholder="Senha">
     </div>
     <form action="http://127.0.0.1:5000/paginainicial">
-        <input type="submit" value="Login">
+        <input type="submit" value="Sign-up">
     </form>
 </div>
 {% endblock cards %}
