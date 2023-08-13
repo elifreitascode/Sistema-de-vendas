@@ -2,29 +2,27 @@
 {% extends 'global/baseLogin.html' %}
 {% block titleLogin %}| Login{% endblock titleLogin %}
 {% block cards %}
+{% load static %}
 <div class="card-login">
     <h1>LOGIN</h1>
+    <div id="msgError"></div>
     <div class="campo-texto">
-        <label for="usuario">Usuário</label>
-        <input type="text" name="usuario" placeholder="Usuário">
+        <label for="usuario" id="userLabel">Usuário</label>
+        <input type="text" id="usuario"  placeholder="Usuário">
     </div>
     <div class="campo-texto">
-        <label for="senha">Senha</label>
-        <input type="password" name="senha" placeholder="Senha">
+        <label for="senha" id="senhaLabel">Senha</label>
+        <input type="password" id="senha" placeholder="Senha">
     </div>
     <div class="justify-button">
         <button onclick="entrar()">Entrar</button>
-        <script src="static/login/js/login.js"></script>
     </div>
-    <div class="justify-button">
-        <hr />
-      </div>
-    <p>
-        Não tem uma conta?
+    <p class="tagp">
+        Não tem uma conta ?
         <a href="signup/">
           Cadastre-se
         </a>
       </p>
-
 </div>
+<script src="{% static 'login/js/login.js' %}"></script>
 {% endblock cards %}
