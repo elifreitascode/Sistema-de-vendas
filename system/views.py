@@ -15,7 +15,6 @@ def vendas(request, id):
         })
     else:
         return render(request, 'system/pages/vendas.html', context={
-            
         }
         )
 
