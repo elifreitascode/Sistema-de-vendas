@@ -30,3 +30,6 @@ def produtos(request,id):
 
 def clientes(request, id):
     return render(request, 'system/pages/clientes.html')
+
+def conta(request, id):
+    return render(request, 'system/pages/conta.html')
