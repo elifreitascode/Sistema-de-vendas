@@ -1,6 +1,6 @@
-# Sistema de vendas web com Flask
+# Sistema de vendas web com Django
 
-Sistema de vendas web, utilizando Flask, uma microframework do Python. 
+Sistema de vendas web, utilizando Django, uma framework do Python. 
 
 ## Tecnologias utilizadas:
 
